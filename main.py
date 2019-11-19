@@ -8,7 +8,5 @@ app.config['SECRET_KEY'] = 'secret!'
 def home():
 	return render_template('template.html')
 
-@app.route('/chat')
-def chat():
-	return render_template('chat.html')
+
 
