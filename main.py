@@ -8,10 +8,10 @@ app.config['SECRET_KEY'] = 'secret!'
 def home():
 	return render_template('template.html')
 
-@app.route('/l')
-def signin():
+@app.route('/login_student')
+def login_student():
 	return render_template('Login_student.html')
 
 if __name__ == '__main__':
     #app.run(host='0.0.0.0', port=80)
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000,debug=True)
