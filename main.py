@@ -5,7 +5,7 @@ app.config['SECRET_KEY'] = 'secret!'
 
 
 @app.route('/')
-def home():
+def template():
 	return render_template('template.html')
 
 @app.route('/forgetpwEmail')
