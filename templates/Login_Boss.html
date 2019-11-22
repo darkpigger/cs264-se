@@ -103,10 +103,11 @@
         </div>
          <!--bar-->
          <div class="w3-bar w3-dark-grey  w3-display-topleft"style="height:30px ; width:89%;margin-left:11%;margin-top:4.3%">
-            <a href="Login_Advicer.html" class="w3-bar-item w3-button ">อาจารย์ที่ปรึกษา</a>
-            <a href="Login_TC.html" class="w3-bar-item w3-button ">อาจารย์ผู้สอน</a>
-            <a href="Login_Boss.html" class="w3-bar-item w3-button w3-light-gray">คณบดี</a>
-            <a href="Login_student.html" class="w3-bar-item w3-button ">นักศึกษา</a>
+            <a href="{{ url_for ('login_advisor')}}" class="w3-bar-item w3-button ">อาจารย์ที่ปรึกษา</a>
+            <a href="{{ url_for ('login_tc')}}" class="w3-bar-item w3-button">อาจารย์ผู้สอน</a>
+            <a href="{{ url_for ('login_boss')}}" class="w3-bar-item w3-button w3-light-gray">คณบดี</a>
+            <a href="{{ url_for ('login_student')}}" class="w3-bar-item w3-button ">นักศึกษา</a>
+            
           </div>
         <!--sidebar-->
         <div class="w3-sidebar w3-dark-grey w3-bar-block" style="width:2.55%"></div>
@@ -134,7 +135,7 @@
             <h2 style="font-family: Kanit, sans-serif"><b>Sign in</b></h2>
             <!-- <h6 style="font-family: Kanit, sans-serif; ">(สำหรับนักศึกษา) <a href="#">(สำหรับบุคลากร)</a></h6>  -->
             
-            <form action="Home_Boss.html">
+            <form action="{{ url_for ('home_boss')}}">
 
                 <div class="input-container">
                     <i class="fa fa-user icon"></i>
@@ -152,7 +153,7 @@
                 
                 <button type="submit" class="btn w3-hover-text-dark-gray">Sign in</button>
                 <label>
-                        <button class="btn2 forgotpsw"><a href="ForgetPwEmail.html">Forgot Password</a></button>
+                        <button class="btn2 forgotpsw"><a href="{{ url_for ('forgetpwEmail')}}">Forgot Password</a></button>
                         <input type="checkbox" checked="checked" name="remember"> Remember me
                       </label>
 

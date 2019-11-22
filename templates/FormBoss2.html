@@ -92,9 +92,9 @@
                 <b>ระบบยื่นคำร้องจดทะเบียนเพิ่มเติม</b></div>
             <!--bar-->
          <div class="w3-bar w3-dark-grey  w3-display-left"style="height:34px ; width:89%;margin-left:11%;margin-top:0.72%">
-            <a href="Home_Boss2.html" class="w3-bar-item w3-button">Home</a>
+            <a href="{{ url_for ('home_boss2')}}" class="w3-bar-item w3-button">Home</a>
            
-            <a href="Login_student.html" class="w3-bar-item w3-button w3-black w3-right">Log Out</a>
+            <a href="{{ url_for ('login_student')}}"  class="w3-bar-item w3-button w3-black w3-right">Log Out</a>
           </div>
         </div>
         <!--sidebar-->
@@ -142,7 +142,7 @@
             <div id="myDIV2" class=" w3-padding w3-display-bottom" style="margin-top: 35%;margin-left: 1.25%; height: 700px;">
                 <h1 class="w3-text-red" style="font-family: Kanit, sans-serif; margin-left: 45%;">ไม่อนุมัติ</h1>
                 
-                <a href="Home_Boss2.html"><button class="btn" style="font-family: Kanit, sans-serif; margin-left: 35%;">กลับไปยังหน้าแรก</button></a>
+                <a href="{{ url_for ('home_boss2')}}"><button class="btn" style="font-family: Kanit, sans-serif; margin-left: 35%;">กลับไปยังหน้าแรก</button></a>
             </div>
             
             <script>

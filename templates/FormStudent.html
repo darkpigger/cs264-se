@@ -92,10 +92,10 @@
 
 
                
-                <a href="Home.html" class="w3-bar-item w3-button">Home</a>
-                <a href="Tracking_1.html" class="w3-bar-item w3-button ">Tracking</a>
-                <a href="FormStudent.html" class="w3-bar-item w3-button w3-light-gray">Form</a>
-                <a href="Login_student.html" class="w3-bar-item w3-button w3-black w3-right">Log Out</a>
+                <a href="{{ url_for ('home')}}" class="w3-bar-item w3-button">Home</a>
+                <a href="{{ url_for ('tracking_1')}}" class="w3-bar-item w3-button ">Tracking</a>
+                <a href="{{ url_for ('formstudent')}}" class="w3-bar-item w3-button w3-light-gray">Form</a>
+                <a href="{{ url_for ('login_student')}}" class="w3-bar-item w3-button w3-black w3-right">Log Out</a>
             </div>
         </div>
         <!--sidebar-->
@@ -123,7 +123,7 @@
                     <tr id="myDIV">
                         <td style="width: 600px;">
 
-                            <a href="Form2Student.html"><i class="fa fa-file w3-xxxlarge"
+                            <a href="{{ url_for ('form2student')}}"><i class="fa fa-file w3-xxxlarge"
                                     style=" vertical-align: middle;"></i> คำร้องของวิชา CS000 </a>
                         </td>
                         <!-- <td></td>
@@ -142,7 +142,7 @@
                     <tr id="myDIV">
                         <td style="width: 300px;">
 
-                            <a href="Form2Student.html"><i class="fa fa-file w3-xxxlarge"
+                            <a href="{{ url_for ('form2student')}}"><i class="fa fa-file w3-xxxlarge"
                                     style=" vertical-align: middle;"></i> คำร้องของวิชา CS101 </a>
                         </td>
                         <!-- <td></td>
@@ -162,7 +162,7 @@
                     <tr id="myDIV">
                         <td style="width: 300px;">
 
-                            <a href="Form2Student.html"><i class="fa fa-file w3-xxxlarge"
+                            <a href="{{ url_for ('form2student')}}"><i class="fa fa-file w3-xxxlarge"
                                     style=" vertical-align: middle;"></i> คำร้องของวิชา DS212 </a>
                         </td>
                         <!-- <td></td>

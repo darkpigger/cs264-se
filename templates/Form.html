@@ -92,10 +92,10 @@
                 <b>ระบบยื่นคำร้องจดทะเบียนเพิ่มเติม</b></div>
             <!--bar-->
          <div class="w3-bar w3-dark-grey  w3-display-left"style="height:34px ; width:89%;margin-left:11%;margin-top:0.72%">
-            <a href="Home.html" class="w3-bar-item w3-button">Home</a>
-            <a href="Tracking_1.html" class="w3-bar-item w3-button">Tracking</a>
-            <a href="FormStudent.html" class="w3-bar-item w3-button w3-light-gray">Form</a>
-            <a href="Login_student.html" class="w3-bar-item w3-button w3-black w3-right">Log Out</a>
+            <a href="{{ url_for ('home')}}" class="w3-bar-item w3-button">Home</a>
+            <a href="{{ url_for ('tracking_1')}}" class="w3-bar-item w3-button">Tracking</a>
+            <a href="{{ url_for ('formstudent')}}" class="w3-bar-item w3-button w3-light-gray">Form</a>
+            <a href="{{ url_for ('login_student')}}" class="w3-bar-item w3-button w3-black w3-right">Log Out</a>
           </div>
         </div>
         <!--sidebar-->
@@ -137,7 +137,7 @@
                       </p>
                       <p>
                         <input onclick="sendFunction()" class="btn" type= "button" name= "button" id= "button" value= "ส่งข้อมูล" />
-                        <a href="Home.html"><input class="btn" type= "reset" name= "button2" id= "button2" value= "ยกเลิก" /></a>
+                        <a href="{{ url_for ('home')}}"><input class="btn" type= "reset" name= "button2" id= "button2" value= "ยกเลิก" /></a>
                         
                       </p>
                 </form>
@@ -147,7 +147,7 @@
             <div id="success" class=" w3-padding w3-display-bottom" style="margin-top: 40%;margin-left: 1.25%; height: 700px;">
                 <h1 class="w3-text-light-green" style="font-family: Kanit, sans-serif; margin-left: 40%;">ส่งคำร้องเรียบร้อย</h1>
                 
-                <a href="Home.html"><button class="btn" style="font-family: Kanit, sans-serif; margin-left: 35%;" id= "button3">กลับไปยังหน้าแรก</button></a>
+                <a href="{{ url_for ('home')}}"><button class="btn" style="font-family: Kanit, sans-serif; margin-left: 35%;" id= "button3">กลับไปยังหน้าแรก</button></a>
             </div>
             <script>
                 function sendFunction() {

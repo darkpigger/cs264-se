@@ -100,14 +100,14 @@ def tracking_1():
 def tracking_2():
 	return render_template('Tracking_2.html')
 
-@app.route('/tracking_3cancle')
-def tracking_3cancle():
-	return render_template('Tracking_3cancle.html')
+@app.route('/tracking_3cancel')
+def tracking_3cancel():
+	return render_template('Tracking_3cancel.html')
 
 @app.route('/tracking_3none')
 def tracking_3none():
 	return render_template('Tracking_3none.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
-    #app.run(host='0.0.0.0', port=5000,debug=True)
+    #app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=5000,debug=True)

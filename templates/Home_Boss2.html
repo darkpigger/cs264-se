@@ -76,9 +76,9 @@
             <div class="w3-bar w3-dark-grey  w3-display-left"
                 style="height:34px ; width:89%;margin-left:11%;margin-top:0.72%">
                 
-                <a href="Home_Boss2.html" class="w3-bar-item w3-button w3-light-gray">Home</a>
+                <a href="{{ url_for ('home_boss2')}}" class="w3-bar-item w3-button w3-light-gray">Home</a>
                 
-                <a href="Login_student.html" class="w3-bar-item w3-button w3-black w3-right">Log Out</a>
+                <a href="{{ url_for ('login_student')}}" class="w3-bar-item w3-button w3-black w3-right">Log Out</a>
             </div>
         </div>
         <!--sidebar-->
@@ -120,7 +120,7 @@
                     <tr id="myDIV">
                         <td style="width: 600px;">
 
-                            <a href="FormBoss.html"><i class="fa fa-file w3-xxxlarge" style=" vertical-align: middle;"></i> คำร้องของวิชา DS221 จาก 6109000001 สมหญิง
+                            <a href="{{ url_for ('formboss')}}"><i class="fa fa-file w3-xxxlarge" style=" vertical-align: middle;"></i> คำร้องของวิชา DS221 จาก 6109000001 สมหญิง
                                 ตระกูลสม</a>
                         </td>
                         <!-- <td></td>
@@ -138,7 +138,7 @@
                     <tr id="myDIV">
                         <td style="width: 600px;">
 
-                            <a href="FormBoss.html"><i class="fa fa-file w3-xxxlarge" style=" vertical-align: middle;"></i> คำร้องของวิชา CS101 จาก 6109000002 สมใจ
+                            <a href="{{ url_for ('formboss')}}"><i class="fa fa-file w3-xxxlarge" style=" vertical-align: middle;"></i> คำร้องของวิชา CS101 จาก 6109000002 สมใจ
                                 ตระกูลสม</a>
                         </td>
                         <!-- <td></td>
@@ -156,7 +156,7 @@
                     <tr id="myDIV" >
                         <td style="width: 600px;">
 
-                            <a href="FormBoss.html"><i class="fa fa-file w3-xxxlarge" style=" vertical-align: middle;"></i> คำร้องของวิชา SS100 จาก 6109000003 สมหมาย
+                            <a href="{{ url_for ('formboss')}}"><i class="fa fa-file w3-xxxlarge" style=" vertical-align: middle;"></i> คำร้องของวิชา SS100 จาก 6109000003 สมหมาย
                                 ตระกูลสม</a>
                         </td>
                         <!-- <td></td>

@@ -92,9 +92,9 @@
                 <b>ระบบยื่นคำร้องจดทะเบียนเพิ่มเติม</b></div>
             <!--bar-->
          <div class="w3-bar w3-dark-grey  w3-display-left"style="height:34px ; width:89%;margin-left:11%;margin-top:0.72%">
-            <a href="Home_TC.html" class="w3-bar-item w3-button">Home</a>
+            <a href="{{ url_for ('home_tc')}}" class="w3-bar-item w3-button">Home</a>
            
-            <a href="Login_student.html" class="w3-bar-item w3-button w3-black w3-right">Log Out</a>
+            <a href="{{ url_for ('login_student')}}" class="w3-bar-item w3-button w3-black w3-right">Log Out</a>
           </div>
         </div>
         <!--sidebar-->
@@ -136,7 +136,7 @@
                       </p>
                       <p>
                         <input onclick="sendFunction()" class="btn" type= "button" name= "button" id= "button" value= "อนุมัติพร้อมส่งเหตุผล" />
-                        <a href="Home_TC2.html"><input class="btn" type= "button" name= "button2" id= "button2" value= "ไม่อนุมัติ" /></a>
+                        <a href="{{ url_for ('home_tc2')}}"><input class="btn" type= "button" name= "button2" id= "button2" value= "ไม่อนุมัติ" /></a>
                         
                       </p>
                 </form>
@@ -146,7 +146,7 @@
             <div id="success" class=" w3-padding w3-display-bottom" style="margin-top: 35%;margin-left: 1.25%; height: 700px;">
                 <h1 class="w3-text-light-green" style="font-family: Kanit, sans-serif; margin-left: 40%;">ส่งข้อมูลเรียบร้อย</h1>
                 
-                <a href="Home_TC2.html"><button class="btn" style="font-family: Kanit, sans-serif; margin-left: 35%;" id= "button3">กลับไปยังหน้าแรก</button></a>
+                <a href="{{ url_for ('home_tc2')}}"><button class="btn" style="font-family: Kanit, sans-serif; margin-left: 35%;" id= "button3">กลับไปยังหน้าแรก</button></a>
             </div>
             
             <script>
