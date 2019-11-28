@@ -4,9 +4,9 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 
 
-@app.route('/')
-def template():
-	return render_template('template.html')
+# @app.route('/')
+# def template():
+# 	return render_template('template.html')
 
 @app.route('/forgetpwEmail')
 def forgetpwEmail():
@@ -84,7 +84,7 @@ def login_advisor():
 def login_boss():
 	return render_template('Login_Boss.html')
 
-@app.route('/login_student')
+@app.route('/')
 def login_student():
 	return render_template('Login_student.html')
 
